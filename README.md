@@ -1,52 +1,76 @@
-# Cookie Manager Pro 🍪
+# Cookie Manager Pro
 
-Advanced Chrome Extension for cookie inspection, editing, and management. Built with modern web technologies and optimized for performance.
+Professional-grade Chrome extension for cookie inspection, editing, and secure data portability. Built with modern web standards and optimized for high-performance handling of large datasets.
 
 ## Key Features
 
-- **Real-time Synchronization**: Instant updates via Service Worker whenever cookies are modified.
-- **High Performance**: Virtualized rendering (using `@tanstack/react-virtual`) capable of handling 10,000+ cookie records smoothly.
-- **Import/Export**: Seamlessly backup and restore cookies via JSON format.
-- **Advanced Editing**: Modify any cookie attribute including Secure, HttpOnly, and Expiration.
-- **Search & Filter**: Blazing fast search by domain or name.
-- **Modern UI**: Clean, dark-mode ready interface built with Tailwind CSS and Lucide icons.
+- **Real-time Synchronization**: Instant UI updates via background service worker listeners, ensuring state consistency across browser sessions.
+- **High Performance**: Optimized rendering using `@tanstack/react-virtual`, capable of handling 10,000+ cookie records with constant-time performance.
+- **Data Portability**: Secure import and export functionality via JSON format for session backup and migration.
+- **Advanced Management**: granular control over cookie attributes including Secure, HttpOnly, SameSite, and Expiration.
+- **Efficient Filtering**: Low-latency search implementation for filtering by domain or name.
+- **Professional UI**: Responsive interface built with Tailwind CSS, supporting both light and dark mode preferences.
 
-## Tech Stack
+## Technical Architecture
 
-- **Framework**: [WXT](https://wxt.dev/) (Web Extension Framework)
-- **UI Library**: React 19
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS
-- **Performance**: @tanstack/react-virtual
-- **Testing**: Vitest + Testing Library
-- **Language**: TypeScript
+- **Framework**: WXT (Web Extension Framework)
+- **Library**: React 19 (TypeScript)
+- **Build System**: Vite
+- **Styling**: Tailwind CSS v4
+- **Performance**: TanStack Virtual
+- **Testing**: Vitest with JSDOM and Testing Library
 
-## Installation & Setup
+## Getting Started
 
-1. **Clone the repository**
-2. **Install dependencies**:
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/arhum04/cookie-manager-pro.git
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
-3. **Run in development mode**:
+
+3. Run development mode:
    ```bash
    npm run dev
    ```
-4. **Build for production**:
-   ```bash
-   npm run build
-   ```
 
-## Testing
+### Production Build
 
-The project includes integration tests validating cookie behavior and utility functions.
+To generate the production-ready extension:
 ```bash
-npx vitest
+npm run build
+```
+The output will be available in the `.output/chrome-mv3` directory.
+
+## Testing and Quality Assurance
+
+The project maintains high reliability through automated integration tests.
+
+```bash
+npx vitest run
 ```
 
-## Architecture
+## Privacy and Security
 
-- `entrypoints/background.ts`: Service worker listening for cookie events and broadcasting changes.
-- `entrypoints/popup/`: Main UI entrypoint with React and Tailwind.
-- `lib/cookies.ts`: Core business logic for cookie manipulation.
-- `components/CookieList.tsx`: Virtualized list implementation for performance.
+Cookie Manager Pro is designed with a security-first approach:
+- **Local-only Processing**: No data is transmitted to external servers. All cookie manipulations occur within the local browser context.
+- **Minimal Permissions**: The extension requests only the necessary permissions (`cookies`, `storage`) required for its core functionality.
+- **Secure Data Handling**: JSON imports are validated to prevent injection of malicious payloads.
+
+## Contributing
+
+Contributions are welcome. Please ensure that any pull requests follow the established TypeScript and styling conventions.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

@@ -1,8 +1,15 @@
 {
-  "name": "wxt-react-starter",
-  "description": "manifest.json description",
+  "name": "cookie-manager-pro",
+  "description": "Professional-grade Chrome extension for cookie inspection, editing, and secure data portability.",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Arhum Khan",
+  "license": "MIT",
+  "homepage": "https://github.com/arhum04/cookie-manager-pro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arhum04/cookie-manager-pro.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "wxt",
