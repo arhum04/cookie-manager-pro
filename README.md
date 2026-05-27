@@ -2,8 +2,6 @@
 
 Professional-grade Chrome extension for cookie inspection, editing, and secure data portability. Built with modern web standards and optimized for high-performance handling of large datasets.
 
-![Cookie Manager Pro Dashboard](https://raw.githubusercontent.com/arhum04/cookie-manager-pro/main/assets/preview.png)
-
 ## Key Features
 
 - **Real-time Synchronization**: Instant UI updates via background service worker listeners, ensuring state consistency across browser sessions.
