@@ -1,13 +1,14 @@
 # Cookie Manager Pro
 
-[![Continuous Integration](https://github.com/arhum04/cookie-manager-pro/actions/workflows/ci.yml/badge.svg)](https://github.com/arhum04/cookie-manager-pro/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/github/package-json/v/arhum04/cookie-manager-pro)](https://github.com/arhum04/cookie-manager-pro)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+Professional-grade Chrome extension for cookie inspection, editing, and secure data portability.
+
+### Stack
+**Languages:** TypeScript  
+**UI:** React 19, Tailwind CSS v4  
+**Tools:** Vite, WXT, Vitest  
 
 Professional-grade Chrome extension for cookie inspection, editing, and secure data portability. Built with modern web standards and optimized for high-performance handling of large datasets.
 
